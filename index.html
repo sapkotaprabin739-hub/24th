@@ -1,27 +1,311 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Restaurant Management System</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+
+body{
+    background:#f5f5f5;
+}
+
+
+/* Header */
+
+header{
+    background:#d35400;
+    color:white;
+    padding:25px;
+    text-align:center;
+}
+
+
+nav{
+    margin-top:15px;
+}
+
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:15px;
+    font-size:18px;
+}
+
+
+
+/* Home */
+
+.home{
+    text-align:center;
+    padding:40px;
+}
+
+
+.home img{
+    width:300px;
+    height:180px;
+    border-radius:15px;
+}
+
+
+.home h2{
+    margin:20px;
+    color:#d35400;
+}
+
+
+
+/* Cards */
+
+.container{
+
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+    padding:20px;
+
+}
+
+
+.card{
+
+    background:white;
+    width:250px;
+    padding:25px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 0 10px gray;
+
+}
+
+
+.card h2{
+
+    color:#d35400;
+    margin-bottom:15px;
+
+}
+
+
+button{
+
+    margin-top:15px;
+    padding:10px 20px;
+    background:#d35400;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+
+}
+
+
+button:hover{
+
+    background:#a04000;
+
+}
+
+
+
+/* Footer */
+
+footer{
+
+    background:#333;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:30px;
+
+}
+
+
+</style>
+
 </head>
 
-<body>
-    <H1>hello world</H1>
-    <main>
-        <section></section>
-        <section></section>
-        <section></section>
-    </main>
 
-    
-    <head></head>
-    <footer></footer>
-    <nav></nav>
-    <section></section>
-    <aside></aside>
+<body>
+
+
+<header>
+
+<h1>🍽 Restaurant Management System</h1>
+
+<nav>
+
+<a href="#">Home</a>
+<a href="#">Menu</a>
+<a href="#">Customers</a>
+<a href="#">Orders</a>
+<a href="#">Reports</a>
+
+</nav>
+
+</header>
+
+
+
+
+<section class="home">
+
+
+<img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4" 
+alt="Restaurant">
+
+
+<h2>Welcome To Our Restaurant</h2>
+
+<p>
+A system that manages restaurant operations faster and efficiently.
+</p>
+
+
+</section>
+
+
+
+
+
+<section class="container">
+
+
+<div class="card">
+
+<h2>🍕 Food Menu</h2>
+
+<p>
+Pizza - ¥800<br>
+Burger - ¥600<br>
+Ramen - ¥900<br>
+Coffee - ¥300
+</p>
+
+<button onclick="menu()">View Menu</button>
+
+</div>
+
+
+
+
+
+<div class="card">
+
+<h2>👥 Customers</h2>
+
+<p>
+Name<br>
+Phone Number<br>
+Reservation Date<br>
+Number of People
+</p>
+
+<button onclick="customer()">Customers</button>
+
+</div>
+
+
+
+
+
+<div class="card">
+
+<h2>🛒 Orders</h2>
+
+<p>
+Order ID<br>
+Food Items<br>
+Total Price<br>
+Payment Status
+</p>
+
+<button onclick="order()">Orders</button>
+
+</div>
+
+
+
+
+
+<div class="card">
+
+<h2>📊 Reports</h2>
+
+<p>
+Daily Sales Report<br>
+Monthly Sales Report<br>
+Income Report
+</p>
+
+<button onclick="report()">Reports</button>
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+<footer>
+
+<p>
+© 2026 Restaurant Management System
+</p>
+
+</footer>
+
+
+
+<script>
+
+function menu(){
+
+alert("Food Menu Management");
+
+}
+
+
+function customer(){
+
+alert("Customer Management");
+
+}
+
+
+function order(){
+
+alert("Order Management");
+
+}
+
+
+function report(){
+
+alert("Sales Report");
+
+}
+
+
+</script>
+
+
 
 </body>
-
 </html>
