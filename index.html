@@ -2,12 +2,9 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Restaurant Management System</title>
+<title>Sakura Hotel</title>
 
 <style>
-
 *{
     margin:0;
     padding:0;
@@ -15,296 +12,234 @@
     font-family:Arial, sans-serif;
 }
 
-
 body{
     background:#f5f5f5;
 }
 
-
 /* Header */
-
 header{
-    background:#d35400;
+    background:#0d6efd;
     color:white;
-    padding:25px;
+    padding:20px;
     text-align:center;
 }
 
-
-nav{
-    margin-top:15px;
+.logo{
+    font-size:35px;
+    font-weight:bold;
 }
 
+/* Navigation */
+nav{
+    background:#333;
+    padding:10px;
+    text-align:center;
+}
 
 nav a{
     color:white;
     text-decoration:none;
-    margin:15px;
+    margin:20px;
     font-size:18px;
 }
 
-
+nav a:hover{
+    color:#00c6ff;
+}
 
 /* Home */
-
-.home{
+.hero{
+    height:400px;
+    background:url("hotel.jpg");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
     text-align:center;
+}
+
+.hero h1{
+    font-size:45px;
+    background:rgba(0,0,0,0.5);
+    padding:20px;
+}
+
+
+/* Services */
+.section{
     padding:40px;
+    text-align:center;
 }
 
-
-.home img{
-    width:300px;
-    height:180px;
-    border-radius:15px;
-}
-
-
-.home h2{
-    margin:20px;
-    color:#d35400;
-}
-
-
-
-/* Cards */
-
-.container{
-
+.cards{
     display:flex;
     justify-content:center;
     gap:20px;
-    flex-wrap:wrap;
-    padding:20px;
-
 }
-
 
 .card{
-
     background:white;
     width:250px;
-    padding:25px;
-    border-radius:15px;
-    text-align:center;
+    padding:20px;
+    border-radius:10px;
     box-shadow:0 0 10px gray;
+}
 
+.card h3{
+    color:#0d6efd;
 }
 
 
-.card h2{
-
-    color:#d35400;
-    margin-bottom:15px;
-
+/* Room */
+.room{
+    background:#fff;
+    padding:20px;
+    margin:20px;
+    border-radius:10px;
 }
 
 
+/* Button */
 button{
-
-    margin-top:15px;
-    padding:10px 20px;
-    background:#d35400;
+    background:#0d6efd;
     color:white;
     border:none;
+    padding:12px 25px;
     border-radius:5px;
     cursor:pointer;
-
 }
-
 
 button:hover{
-
-    background:#a04000;
-
+    background:#003f9e;
 }
-
 
 
 /* Footer */
-
 footer{
-
     background:#333;
     color:white;
     text-align:center;
     padding:15px;
-    margin-top:30px;
-
 }
-
 
 </style>
 
 </head>
 
-
 <body>
-
 
 <header>
 
-<h1>🍽 Restaurant Management System</h1>
+<div class="logo">
+🏨 Sakura Hotel
+</div>
 
-<nav>
-
-<a href="#">Home</a>
-<a href="#">Menu</a>
-<a href="#">Customers</a>
-<a href="#">Orders</a>
-<a href="#">Reports</a>
-
-</nav>
+<p>Luxury & Comfortable Stay</p>
 
 </header>
 
 
+<nav>
+
+<a href="#">Home</a>
+<a href="#">Rooms</a>
+<a href="#">Services</a>
+<a href="#">Contact</a>
+
+</nav>
 
 
-<section class="home">
+<section class="hero">
+
+<h1>
+Welcome To Sakura Hotel
+</h1>
+
+</section>
 
 
-<img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4" 
-alt="Restaurant">
+<section class="section">
+
+<h2>Our Services</h2>
+
+<br>
+
+<div class="cards">
 
 
-<h2>Welcome To Our Restaurant</h2>
+<div class="card">
+<h3>🛏 Room Booking</h3>
+<p>Easy online room reservation system.</p>
+</div>
 
-<p>
-A system that manages restaurant operations faster and efficiently.
-</p>
+
+<div class="card">
+<h3>🍽 Restaurant</h3>
+<p>Delicious food and drinks available.</p>
+</div>
+
+
+<div class="card">
+<h3>🚗 Parking</h3>
+<p>Safe parking facility for guests.</p>
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<section class="section">
+
+<h2>Available Rooms</h2>
+
+<div class="room">
+
+<h3>Deluxe Room</h3>
+<p>Price: ¥10,000 / Night</p>
+<button>Book Now</button>
+
+</div>
+
+
+<div class="room">
+
+<h3>Premium Suite</h3>
+<p>Price: ¥20,000 / Night</p>
+<button>Book Now</button>
+
+</div>
 
 
 </section>
 
 
 
+<section class="section">
 
-
-<section class="container">
-
-
-<div class="card">
-
-<h2>🍕 Food Menu</h2>
+<h2>Contact</h2>
 
 <p>
-Pizza - ¥800<br>
-Burger - ¥600<br>
-Ramen - ¥900<br>
-Coffee - ¥300
+📞 Phone: 090-1234-5678
 </p>
-
-<button onclick="menu()">View Menu</button>
-
-</div>
-
-
-
-
-
-<div class="card">
-
-<h2>👥 Customers</h2>
 
 <p>
-Name<br>
-Phone Number<br>
-Reservation Date<br>
-Number of People
+📧 Email: sakurahotel@gmail.com
 </p>
-
-<button onclick="customer()">Customers</button>
-
-</div>
-
-
-
-
-
-<div class="card">
-
-<h2>🛒 Orders</h2>
-
-<p>
-Order ID<br>
-Food Items<br>
-Total Price<br>
-Payment Status
-</p>
-
-<button onclick="order()">Orders</button>
-
-</div>
-
-
-
-
-
-<div class="card">
-
-<h2>📊 Reports</h2>
-
-<p>
-Daily Sales Report<br>
-Monthly Sales Report<br>
-Income Report
-</p>
-
-<button onclick="report()">Reports</button>
-
-</div>
-
-
 
 </section>
-
-
 
 
 
 <footer>
 
-<p>
-© 2026 Restaurant Management System
-</p>
+© 2026 Sakura Hotel | Hotel Management System
 
 </footer>
-
-
-
-<script>
-
-function menu(){
-
-alert("Food Menu Management");
-
-}
-
-
-function customer(){
-
-alert("Customer Management");
-
-}
-
-
-function order(){
-
-alert("Order Management");
-
-}
-
-
-function report(){
-
-alert("Sales Report");
-
-}
-
-
-</script>
-
 
 
 </body>
